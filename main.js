@@ -17,7 +17,8 @@ async function init() {
 async function load() {
   console.log("loading:");
 
-  const baseURL = "https://unpkg.com/@ffmpeg/core@0.12.6/dist/esm";
+  // const baseURL = "https://unpkg.com/@ffmpeg/core@0.12.6/dist/esm";
+  const baseURL = "./ffmpeg-core";
 
   ffmpeg.on("log", ({ message }) => {
     console.log(message);
